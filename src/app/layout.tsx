@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${lora.variable} ${openSans.variable} antialiased text-gray-800 relative`}
+        className={`${lora.variable} ${openSans.variable} antialiased text-gray-800 relative w-screen`}
       >
         {children}
       </body>

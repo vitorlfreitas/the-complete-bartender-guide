@@ -9,10 +9,11 @@ interface Props {
 }
 
 const NavBar = ({ isOpen, toggleMenu }: Props) => {
+
     return (
-        <header className="fixed z-50 top-0 left-0 w-screen bg-amber-950 lg:bg-transparent text-white md:px-10 lg:py-2">
-            <div className="flex justify-between items-center p-5 font-lora font-bold ">
-                <Link className="font-bold text-3xl" href={"/"}>
+        <header className="fixed z-50 top-0 left-0 w-full bg-amber-950 py-2 text-white md:px-6 lg:py-1">
+            <div className="flex justify-between items-center px-5  font-lora font-bold ">
+                <Link className="font-bold text-2xl lg:text-xl xl:text-3xl" href={"/"}>
                     VITOR
                     <span className=" text-yellow-800 lg:text-yellow-400">
                         FREITAS
@@ -23,23 +24,22 @@ const NavBar = ({ isOpen, toggleMenu }: Props) => {
                 <nav className="hidden lg:flex space-x-6">
                     <Link
                         href={"/cocktails"}
-                        className="hover:text-yellow-500 text-3xl"
+                        className="hover:text-yellow-500 text-2xl"
                     >
                         Cocktails
                     </Link>
                     <Link
                         href={"/cocktails"}
-                        className="hover:text-yellow-500 text-3xl"
+                        className="hover:text-yellow-500 text-2xl"
                     >
                         Techniques
                     </Link>
                     <Link
                         href={"/cocktails"}
-                        className="hover:text-yellow-500 text-3xl"
+                        className="hover:text-yellow-500 text-2xl"
                     >
                         Contact
                     </Link>
-                    
                 </nav>
 
                 {/* Mobile Menu Icon */}
@@ -63,7 +63,7 @@ const NavBar = ({ isOpen, toggleMenu }: Props) => {
                 transition={{ duration: 0.5, ease: "easeInOut" }}
             >
                 <li className="p-5 hover:text-yellow-500 hover:bg-gray-100 cursor-pointer text-xl">
-                    <Link href={"/cocktails"} >Cocktails</Link>
+                    <Link href={"/cocktails"}>Cocktails</Link>
                 </li>
                 <li className="p-5 hover:text-yellow-500 hover:bg-gray-100 cursor-pointer text-xl">
                     <Link href={"/techniques"}>Techniques</Link>
